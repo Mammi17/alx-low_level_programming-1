@@ -1,5 +1,10 @@
 #include<stdio.h>
-#include<stdlib.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int a;
@@ -7,6 +12,7 @@ int main(void)
 	long long int c;
 	char d;
 	float e;
+
 	printf("Size of an int is: %lu byte(s)\n", (unsigned long)sizeof(a));
 	printf("Size of a long int is: %lu byte(s)\n", (unsigned long)sizeof(b));
 	printf("Size of a long long int is: %lu byte(s)\n", (unsigned long)sizeof(c));
