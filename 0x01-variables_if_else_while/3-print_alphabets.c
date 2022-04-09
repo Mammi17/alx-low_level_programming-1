@@ -2,7 +2,10 @@
 #include<stdlib.h>
 #include<time.h>
 
-/** main Entry - point*/
+/** main Entry - point
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
@@ -10,11 +13,11 @@ int main(void)
 
 	for (alphab = 'a'; alphab <= 'z'; alphab++)
 	{
-		putchar("alphab");
+		putchar(alphab);
 	}
 	for (alphab = 'A'; alphab <= 'Z'; alphab++)
 	{
-		putchar("alphab");
+		putchar(alphab);
 	}
 
 	putchar('\n');
