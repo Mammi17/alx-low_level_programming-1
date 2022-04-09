@@ -2,6 +2,8 @@
 #include<stdlib.h>
 #include<time.h>
 
+/** main - Entry point*/
+
 /* more headers goes there */
 
 /* betty style doc for function mainngoes there */
@@ -15,13 +17,13 @@ int main(void)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, n % 10);
 	}
-	else if (n % 10 == 0 )
+	else if (n % 10 == 0)
 	{
 		printf("Last digit of %d is %d and is 0\n", n, n % 10);
 	}
-	else 
+	else
 	{
-		printf(" Last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
 	}
 	return (0);
 }

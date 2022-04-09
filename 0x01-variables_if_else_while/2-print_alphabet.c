@@ -1,12 +1,13 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<stdlib.h>
+
+/** main Entry - point*/
 
 int main(void)
 {
 	char alpha;
 	
-	for (alpha='a';alpha<='z';alpha++)
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
 		putchar("alpha");
 	}
