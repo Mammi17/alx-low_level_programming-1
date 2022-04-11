@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-/*
+/**
  * main - Entry point
  *
  * Description: print numbers 0 to 9 on one line with putchar

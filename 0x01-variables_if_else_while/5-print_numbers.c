@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-/* main - print a numbers 0 to 9 on one line
+/**
+ *main - print a numbers 0 to 9 on one line
  *
  * Return: Always 0 (Success)
  */
