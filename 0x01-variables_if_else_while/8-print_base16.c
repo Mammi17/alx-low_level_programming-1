@@ -11,7 +11,7 @@ int main(void)
 {
 	char base;
 
-	for (base = '0'; base < '10'; base++)
+	for (base = '0'; base <= '9'; base++)
 	{
 		putchar(base);
 	}
