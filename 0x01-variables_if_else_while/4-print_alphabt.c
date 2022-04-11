@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-/** main - Entry - point
+/*
+ * main - print lowercase alphabet excluding e and q
  *
  * Return: Always 0 (Success)
  */

@@ -1,20 +1,21 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-/*
- * main - print the lowercase alphabet
+/* 
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char alpha;
+	char letter;
 
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	for (letter='z'; letter >= 'a'; letter--)
 	{
-		putchar(alpha);
+		putchar(letter);
 	}
 	putchar('\n');
+
 	return (0);
 }

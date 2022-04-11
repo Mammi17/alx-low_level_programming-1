@@ -2,14 +2,12 @@
 #include<stdlib.h>
 #include<time.h>
 
-/** main - Entry point
+/*
+ * main - print a number and it's last digit along with whether its last digit is 0, greater than 5, or less than 6 and not 0
  *
  * Return: Always 0 (Success)
  */
 
-/* more headers goes there */
-
-/* betty style doc for function mainngoes there */
 int main(void)
 {
 	int n;

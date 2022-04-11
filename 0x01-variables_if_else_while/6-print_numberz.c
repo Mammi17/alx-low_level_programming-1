@@ -2,19 +2,21 @@
 #include<stdlib.h>
 
 /*
- * main - print the lowercase alphabet
+ * main - Entry point
  *
+ * Description: print numbers 0 to 9 on one line with putchar
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char alpha;
+	int b;
 
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	for (b=0; b <= 9; b++)
 	{
-		putchar(alpha);
+		putchar(b);
 	}
 	putchar('\n');
+
 	return (0);
 }

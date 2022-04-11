@@ -2,14 +2,11 @@
 #include<stdlib.h>
 #include<time.h>
 
-/** main - Entry point
+/*
+ * main - prints a random number and states whether: it is positive, negative or zero
  *
  * Return: Always 0 (Success)
  */
-
-/* more headers goes there*/
-
-/* betty style doc for function main goes there*/
 
 int main(void)
 {
