@@ -11,11 +11,11 @@ int main(void)
 {
 	char base;
 
-	for (base=0; base < 10; base++)
+	for (base = 0; base < 10; base++)
 	{
 		putchar(base);
 	}
-	for (base='a'; base <= 'f'; base++)
+	for (base = 'a'; base <= 'f'; base++)
 	{
 		putchar(base);
 	}
