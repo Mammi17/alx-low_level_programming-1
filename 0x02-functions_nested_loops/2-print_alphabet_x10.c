@@ -4,7 +4,7 @@
  *
  * Return: Always 0
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 	int count = 0;
 	char l;
@@ -13,6 +13,5 @@ int main(void)
 		for (l = 'a'; l <= 'z'; l++)
 	_putchar(l);
 	_putchar('\n');
-	return (0);
 	}
 }
