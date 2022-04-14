@@ -1,13 +1,13 @@
-
 #include "main.h"
 
 /**
- * main - chheck code
+ * add - adds two integers
+ * @n1: the first integer
+ * @n2: the second integer
  *
- * Return: Always 0
+ * Return: the result
  */
 int add(int, int)
 {
-	int n1, n2;
 	return (n1 + n2);
 }

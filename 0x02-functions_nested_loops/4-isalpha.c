@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
- * main - chheck code
- * Return: Always 0
+ * _isalpha - checks for alphabetic character
+ * @c: the character to be checked
+ *
+ * Return: Always 1 or 0
  */
 int _isalpha(int c)
 {

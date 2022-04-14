@@ -1,13 +1,15 @@
 #include "main.h"
 
 /**
- * main - chheck code
+ * print_last_digit - print the last digit of a number
+ * @a: the number
  *
- * Return: Always 0
+ * Return: Always the value
  */
-int print_last_digit(int)
+int print_last_digit(int a)
 {
-	int digit,a;
+	int digit;
+
 	digit = a % 10;
 	if (digit < 0)
 		digit *= -1;

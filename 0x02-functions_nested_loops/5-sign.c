@@ -1,9 +1,10 @@
-#include "main.h
+#include "main.h"
 
 /**
- * main - chheck code
+ * print_sign - prints the sign of a number
+ * @n: the number of which the sign will be printed
  *
- * Return: Always 0
+ * Return: Always 0 or 1 or-1
  */
 int print_sign(int n)
 {

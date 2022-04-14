@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * main - chheck code
+ * main - print the absolue value of a number
+ * @n: the integer to be computed
  *
- * Return: Always 0
+ * Return: the value n or -n
  */
-int _abs(int)
+int _abs(int n)
 {
-	int n;
-
 	if (n >= 0)
 		return (n);
 	else

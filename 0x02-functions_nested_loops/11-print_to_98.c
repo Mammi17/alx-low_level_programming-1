@@ -1,7 +1,9 @@
 #include "main.h"
+#include<stdio.h>
 
 /**
- * main - chheck code
+ * print_to_98 - prints all naturals numbers from n to 98
+ * @n: the number to begin counting at
  *
  * Return: Always 0
  */
