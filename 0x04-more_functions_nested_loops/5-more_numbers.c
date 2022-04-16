@@ -15,7 +15,7 @@ void more_numbers(void)
 		{
 			for (c = 0; c <= 9; c++)
 			{
-				if(!(b == 1 && c >= 5))
+				if (!(b == 1 && c >= 5))
 				{
 					if (b)
 						_putchar(b + '0');

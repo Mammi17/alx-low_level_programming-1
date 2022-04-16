@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - prints fizz for int divisible by 3 and buzz for 5
@@ -11,30 +12,25 @@ int main(void)
 	
 	for (i = 1; i <= 100; i++)
 		{
-			if (i % 3 == 0 && i % 5 != 0)
-			{
-				printf("Fizz");
-			}
-			else if (i % 3 != 0 && i % 5 == 0)
+			if (i == 100)
 			{
 				printf("Buzz");
 			}
-			else if (i % 3 == 0 && i % 5 == 0)
+			else if ((i % 3 == 0) && (i % 5 == 0))
 			{
 				printf("FizzBuzz");
 			}
-			else
+			else if (i % 3 == 0)
 			{
+				printf("Fizz");
+			}
+			else if (i % 5 == 0)
+			{
+				printf("Buzz");
+			}
+			else
 				printf("%d", i);
-			}
-			if (i != 100)
-			{
-				_putchar(' ');
-			}
-			else
-			{
-				_putchar('\n');
-			}
 		}
+	printf("\n");
 	return (0);
 }
