@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -33,7 +31,7 @@ int main(void)
 			{
 				printf("%d", i);
 			}
-			_putchar(' ');
+			printf(" ");
 		}
 	printf("\n");
 	return (0);
