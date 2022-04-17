@@ -1,3 +1,4 @@
+#include<stdio.h>
 #include <stdio.h>
 
 /**
@@ -26,10 +27,10 @@ int main(void)
 
 		else
 		{
-			printf("%i", i);
+			printf("%d", i);
 		}
-		putchar(' ');
 	}
+	putchar(' ');
 	printf("\n");
 	return (0);
 }
