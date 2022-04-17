@@ -34,7 +34,7 @@ int main(void)
 			}
 			putchar(' ');
 			
-			i++
+			i++;
 		}
 	printf("\n");
 	return (0);
