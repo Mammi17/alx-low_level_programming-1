@@ -4,7 +4,7 @@
  * @s: char
  * Return: int
  */
-void _atoi(char *s)
+int _atoi(char *s)
 {
 	int a, b, c, d;
 

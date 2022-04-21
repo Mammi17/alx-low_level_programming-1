@@ -14,7 +14,7 @@ int main(void)
 	b = 0;
 	c = 0;
 	srand(time(NULL));
-	while (b < 3000)
+	while (b < 2645)
 	{
 		a = rand() % 122;
 		if (a > 32)
@@ -23,7 +23,7 @@ int main(void)
 			b += a;
 		}
 	}
-	i[c++] = (3127 - b);
+	i[c++] = (2772 - b);
 	i[c] = '\0';
 	printf("%s", i);
 	return (0);
