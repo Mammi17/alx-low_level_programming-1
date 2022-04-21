@@ -23,8 +23,8 @@ int main(void)
 			b += a;
 		}
 	}
-	a[c++] = (3127 - b);
-	a[c] = '\0';
+	i[c++] = (3127 - b);
+	i[c] = '\0';
 	printf("%s", i);
 	return (0);
 }
