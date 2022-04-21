@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * puts2 - prints every character of a string
- * @str: a pointer 
+ * @str: a pointer
  */
 void puts2(char *str)
 {
