@@ -6,16 +6,17 @@
  * Return: a pointer
  */
 
-char *_strncat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int a, b;
 
 	a = 0;
 	while (dest[a] != '\0')
 		a++;
-	for (b = 0; src[b] = '\0' && n > 0; a++, n--, b++)
+	for (b = 0; src[b] != '\0' && n > b; b++)
 	{
-		dest[a] = src[b];
+		dest[a + b] = src[b];
 	}
+	dest[a + b] = '\0';
 	return (dest);
 }
