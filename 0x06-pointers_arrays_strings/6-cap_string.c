@@ -10,7 +10,7 @@ char *cap_string(char *c)
 	int a, b, trig;
 	char d[] = ",;.!?(){}\nt\" "
 
-	for (a = 0, trig = 0; c[a] = '\0'; a++)
+	for (a = 0, trig = 0; c[a] != '\0'; a++)
 	{
 		if (c[0] > 96 && c[0] < 123)
 		{
@@ -30,11 +30,11 @@ char *cap_string(char *c)
 				c[a] -= 32;
 				trig = 0;
 			}
-			else if(c[a] > 64 && c[a] < 91)
+			else if (c[a] > 64 && c[a] < 91)
 			{
 				trig = 0;
 			}
-			else if(c[a] > 47 && c[a] < 58)
+			else if (c[a] > 47 && c[a] < 58)
 			{
 				trig = 0;
 			}
