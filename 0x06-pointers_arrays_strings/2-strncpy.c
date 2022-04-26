@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _strncpy - function that copy a string
+ * _strncpy - function that copies a string
  * @dest: pointer
  * @src: pointer
- * @n: integer
+ * @n: integer that determine number of bytes to be copy
  * Return: a pointer
  */
 
