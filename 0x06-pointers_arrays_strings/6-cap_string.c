@@ -7,10 +7,13 @@
 
 char *cap_string(char *c)
 {
-	int a, b, trig;
+	int a, b;
+	int trig;
+
 	char d[] = ",;.!?(){}\nt\" ";
 
-	for (a = 0; trig = 0 && c[a] != '\0'; a++)
+	trig = 0;
+	for (a = 0; c[a] != '\0'; a++)
 	{
 		if (c[0] > 96 && c[0] < 123)
 		{
