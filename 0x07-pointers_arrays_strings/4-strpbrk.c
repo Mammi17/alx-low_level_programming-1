@@ -11,10 +11,10 @@ char *_strpbrk(char *s, char *accept)
 	int i, j;
 
 	i = 0;
-	while(s[i])
+	while (s[i])
 	{
 		j = 0;
-		while(accept[j])
+		while (accept[j])
 		{
 			if (s[i] == accept[j])
 			{
@@ -25,5 +25,5 @@ char *_strpbrk(char *s, char *accept)
 		}
 		i++;
 	}
-	return (k);
+	return ('\0');
 }
