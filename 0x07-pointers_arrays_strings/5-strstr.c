@@ -6,7 +6,7 @@
  * Return: pointer
  */
 
-char *_strsn(char * haystack, char *needle)
+char *_strstr(char * haystack, char *needle)
 {
 	unsigned int i, j;
 
@@ -26,5 +26,5 @@ char *_strsn(char * haystack, char *needle)
 		}
 		i++;
 	}
-	return (k);
+	return ('\0');
 }

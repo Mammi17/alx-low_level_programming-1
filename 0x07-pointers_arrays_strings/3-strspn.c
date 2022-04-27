@@ -6,16 +6,16 @@
  * Return: unsigned int
  */
 
-unsigned int _strspn(char * s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j, k;
 
 	i = 0;
 	k = 0;
-	while(accept[i])
+	while (accept[i])
 	{
 		j = 0;
-		while(s[j] != 32)
+		while (s[j] != 32)
 		{
 			if (accept[i] == s[j])
 				k++;

@@ -6,7 +6,7 @@
  * Return: pointer
  */
 
-char *_strspbrk(char * s, char *accept)
+char *_strspbrk(char *s, char *accept)
 {
 	int i, j;
 
