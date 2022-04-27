@@ -21,8 +21,10 @@ char *_strpbrk(char *s, char *accept)
 				s += i;
 				retun (s);
 			}
-			j++
+
+			j++;
 		}
+
 		i++;
 	}
 	return ('\0');
