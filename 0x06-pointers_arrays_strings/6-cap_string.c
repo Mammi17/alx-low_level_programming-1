@@ -33,11 +33,11 @@ char *cap_string(char *c)
 				c[a] -= 32;
 				trig = 0;
 			}
-			else if (c[a] > 64 && c[a] < 91)
+			else if (c[a] > 64 && c[a] < 95)
 			{
 				trig = 0;
 			}
-			else if (c[a] > 47 && c[a] < 58)
+			else if (c[a] > 47 && c[a] < 63)
 			{
 				trig = 0;
 			}
