@@ -13,7 +13,7 @@ char *cap_string(char *c)
 	char d[] = ",;.!?(){}\nt\" ";
 
 	trig = 0;
-	for (a = 0, ; c[a] != '\0'; a++)
+	for (a = 0; c[a] != '\0'; a++)
 	{
 		if (c[0] > 96 && c[0] < 123)
 		{
