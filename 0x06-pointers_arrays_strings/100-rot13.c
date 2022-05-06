@@ -10,6 +10,7 @@ char *rot13(char *c)
 	int a, b;
 	char in[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
 	for (a = 0; c[a] != '\0'; a++)
 	{
 		for (b = 0; in[b] != '\0'; b++)
@@ -21,5 +22,5 @@ char *rot13(char *c)
 			}
 		}
 	}
-	return (0);
+	return (c);
 }

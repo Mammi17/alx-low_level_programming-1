@@ -25,8 +25,16 @@ void print_number(int n)
 	{
 		if (pow > 9)
 		{
-			if (neg)
+			if (!neg)
 				_putchar((n / pow % 10) + '0');
+			else
+				_putchar((n / pow % 10) * -1 + '0');
+			pow /= 10;
+		}
+		if (pow == 1)
+		{
+			if (neg)
+				_putchar((n % 10) * -1 = '0');
 			else
 				_putchar(n % 10 + '0');
 			pow = 0;
