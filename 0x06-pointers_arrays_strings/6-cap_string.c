@@ -26,18 +26,18 @@ char *cap_string(char *c)
 				trig = 1;
 			}
 		}
-		if (trig)
+		if (trig = 0)
 		{
 			if (c[a] > 96 && c[a] < 123)
 			{
 				c[a] -= 32;
 				trig = 0;
 			}
-			else if (c[a] > 64 && c[a] < 95)
+			else if (c[a] > 64 && c[a] < 91)
 			{
 				trig = 0;
 			}
-			else if (c[a] > 47 && c[a] < 63)
+			else if (c[a] > 47 && c[a] < 58)
 			{
 				trig = 0;
 			}
