@@ -15,10 +15,10 @@ char *cap_string(char *c)
 	trig = 0;
 	for (a = 0; c[a] != '\0'; a++)
 	{
-		if (c[0] > 96 && c[0] < 123)
+		/*if (c[0] > 96 && c[0] < 123)
 		{
 			trig = 1;
-		}
+		} */
 		for (b = 0; d[b] != '\0'; b++)
 		{
 			if (d[b] == c[a])
@@ -26,7 +26,7 @@ char *cap_string(char *c)
 				trig = 1;
 			}
 		}
-		if (trig = 0)
+		if (trig)
 		{
 			if (c[a] > 96 && c[a] < 123)
 			{
