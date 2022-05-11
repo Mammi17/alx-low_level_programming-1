@@ -7,7 +7,10 @@
 
 int main(void)
 {
-	printf("File: %s\n", _FILE_);
+	char f[];
+
+	f = _FILE_;
+	printf("File: %s\n", f);
 
 	return (0);
 }
