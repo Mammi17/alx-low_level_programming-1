@@ -6,9 +6,8 @@
 
 int main(void)
 {
-	int argc;
-	char *argv;
+	char _FILE_;
 
-	printf("FILE:%s\n", _FILE_);
+	printf("%s\n", _FILE_);
 	return (0);
 }
