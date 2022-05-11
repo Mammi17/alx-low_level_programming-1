@@ -5,12 +5,9 @@
  * Return: 0
  */
 
-int main(void)
+int main(int argc, char *argv)
 {
-	char f[];
-
-	f = _FILE_;
-	printf("File: %s\n", f);
+	printf("File: %s\n",_FILE_);
 
 	return (0);
 }
