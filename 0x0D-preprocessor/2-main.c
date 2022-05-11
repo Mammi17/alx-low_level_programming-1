@@ -6,6 +6,9 @@
 
 int main(void)
 {
+	int argc;
+	char *argv;
+
 	printf("%s\n", _FILE_);
 	return (0);
 }
