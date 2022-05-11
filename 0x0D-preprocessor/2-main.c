@@ -1,4 +1,13 @@
-#ifndef MAIN_C
-#define MAIN_C
-#define MAIN _FILE_
-#endif
+#include <stdio.h>
+
+/**
+ * main - prints the name of the file it was compiled from
+ * Return: 0
+ */
+
+int main(void)
+{
+	printf("File: %s\n", _FILE_);
+
+	return (0);
+}
