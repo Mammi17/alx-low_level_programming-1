@@ -3,12 +3,14 @@
 
 /**
  * main- prints the name of programm
+ * @argc: integer
+ * @argv: pointer
  * Return: 0
  */
 
-int main(int argc)
+int main(int argc, char *argv[])
 {
-	int a, b, mul;
+	int mul;
 
 	if(argc < 2)
 	{
@@ -17,7 +19,7 @@ int main(int argc)
 	}
 	else
 	{
-		mul = a * b;
+		mul = argv[1] * argv[2];
 		printf("%d\n", mul);
 		return (0);
 	}
