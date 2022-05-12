@@ -16,16 +16,16 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-	else if (argv[] != "%d")
+	else if (argv != "%d")
 	{
 		printf("error\n");
 		return (1);
 	}
 	for (i=1; i <= argc; i++)
 	{
-		if (argv[] > 0)
+		if (argv > 0)
 		{
-			add += argv[i];
+			add += *argv[i];
 			printf("%d\n", add);
 			return (0);
 		}
