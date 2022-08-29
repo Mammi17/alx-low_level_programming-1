@@ -8,8 +8,9 @@
  * Return: 0
  */
 
-int main (char **argv)
+int main ()
 {
-	printf("The name of the program is:%s\n", argv[0]);
+	char **argv;
+	printf("The name of the program is: %s\n", argv[0]);
 	return (0);
 }
