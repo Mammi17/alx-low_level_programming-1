@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - prints the name of program
@@ -8,9 +7,8 @@
  * Return: 0
  */
 
-int main ()
+int main (int argc _attribute_((unused)), char **argv)
 {
-	char **argv;
 	printf("The name of the program is: %s\n", argv[0]);
 	return (0);
 }
