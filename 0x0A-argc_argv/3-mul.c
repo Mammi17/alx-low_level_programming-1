@@ -5,10 +5,10 @@
  * main- prints the name of programm
  * @argc: integer
  * @argv: pointer
- * Return: 0
+ * Return: 0 or 1
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int mul;
 
