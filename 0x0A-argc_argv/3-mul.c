@@ -14,15 +14,12 @@ int main(int argc, char **argv)
 
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[2]);
-	if (argc != 3)
+	if (argc <= 2)
 	{
 		printf("%s\n", "error");
 		return (1);
 	}
-	else
-	{
-		mul = n1 * n2;
-		printf("%d\n", mul);
-		return (0);
-	}
+	mul = n1 * n2;
+	printf("%d\n", mul);
+	return (0);
 }
