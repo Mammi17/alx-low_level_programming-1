@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[2]);
-	if (argc <= 2)
+	if (argc != 3)
 	{
 		printf("%s\n", "error");
 		return (1);
