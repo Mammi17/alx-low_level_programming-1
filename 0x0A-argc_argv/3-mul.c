@@ -10,8 +10,10 @@
 
 int main(int argc, char **argv)
 {
-	int mul;
+	int mul, n1, n2;
 
+	n1 = atoi(argv[1]);
+	n2 = atoi(argv[2]);
 	if(argc < 2)
 	{
 		printf("error\n");
@@ -19,7 +21,7 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		mul = argv[1] * argv[2];
+		mul = n1 * n2;
 		printf("%d\n", mul);
 		return (0);
 	}
