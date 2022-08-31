@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 {
 	int mul, n1, n2;
 
-	mul=0
+	mul = 0;
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[2]);
 	if (argc != 3)
