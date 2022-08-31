@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 	n2 = atoi(argv[2]);
 	if (argc != 3)
 	{
-		printf("%s\n", "error");
+		printf("%s\n", "Error");
 		return (1);
 	}
 	mul = n1 * n2;
