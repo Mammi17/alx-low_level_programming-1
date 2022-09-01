@@ -12,22 +12,23 @@ int main(int argc, char *argv[])
 {
 	int i, add = 0;
 
-	if(argc <= 1)
+	if(argc == 1)
 	{
 		printf("0\n");
 	}
-	else if (argv != "%d")
+	for (i=1; i < argv; i++)
 	{
-		printf("error\n");
-		return (1);
-	}
-	for (i=1; i <= argc; i++)
-	{
-		if (argv > 0)
+		if (argv[i] <'0' || argv[i] >'9')
 		{
-			add += *argv[i];
-			printf("%d\n", add);
-			return (0);
+			printf("Error\n");
+			return (1);
 		}
 	}
+	for (i=1; i < argc; i++)
+	{
+		n=atoi(argv[i])
+		add += n;
+	}
+		printf("%d\n", add);
+		return (0);
 }
