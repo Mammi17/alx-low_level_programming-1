@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 		{
 			if (argv[i][k] < '0' || argv[i][k] > '9')
 			{
-				printf("Error\n");
+				printf("%s\n", "Error");
 				return (1);
 			}
 		}
