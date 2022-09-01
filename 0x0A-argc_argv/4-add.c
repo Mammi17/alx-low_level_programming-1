@@ -9,7 +9,7 @@
  */
 int main(int argc, char **argv)
 {
-	int i, add = 0, n, k, l;
+	int i, add = 0, n, k;
 
 	if (argc == 1)
 		printf("0\n");
@@ -18,16 +18,16 @@ int main(int argc, char **argv)
 	{
 		for (k = 0;  argv[i][k] != '\0'; k++)
 		{
-			if (argv[i][k] < '0' || argv[i][k] > '9')
+			if (argv[i][k] > '9' || argv[i][k] < '0')
 			{
-				printf("%s\n", "Error");
+				printf("Error");
 				return (1);
 			}
 		}
 	}
-	for (l = 1; l < argc; l++)
+	for (i = 1; i < argc; i++)
 	{
-		n = atoi(argv[l]);
+		n = atoi(argv[i]);
 		add += n;
 	}
 		printf("%d\n", add);
