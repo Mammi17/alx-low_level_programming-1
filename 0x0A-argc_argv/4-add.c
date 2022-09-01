@@ -7,8 +7,7 @@
  * @argv: pointer
  * Return: 0
  */
-
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int i, add = 0, n, k;
 
@@ -16,18 +15,18 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-	for (i=1; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
-		for (k=1;  argv[i][k] != '\0'; k++)
-		if (argv[i][k] <'0' || argv[i][k] >'9')
+		for (k = 1;  argv[i][k] != '\0'; k++)
+		if (argv[i][k] < '0' || argv[i][k] > '9')
 		{
 			printf("Error\n");
 			return (1);
 		}
 	}
-	for (i=1; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
-		n=atoi(argv[i])
+		n = atoi(argv[i]);
 		add += n;
 	}
 		printf("%d\n", add);
