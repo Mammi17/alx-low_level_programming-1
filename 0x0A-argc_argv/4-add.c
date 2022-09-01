@@ -5,17 +5,15 @@
  * main- prints adds positive numbers
  * @argc: integer
  * @argv: pointer
- * Return: 0
+ * Return: 0 or 1
  */
 int main(int argc, char **argv)
 {
-	int i, add = 0, n, k;
+	int i, add = 0, n, k, l;
 
 	if (argc == 1)
-	{
-		printf("0");
-		printf("\n");
-	}
+		printf("0\n");
+
 	for (i = 1; i < argc; i++)
 	{
 		for (k = 0;  argv[i][k] != '\0'; k++)
@@ -27,9 +25,9 @@ int main(int argc, char **argv)
 			}
 		}
 	}
-	for (i = 1; i < argc; i++)
+	for (l = 1; l < argc; l++)
 	{
-		n = atoi(argv[i]);
+		n = atoi(argv[l]);
 		add += n;
 	}
 		printf("%d\n", add);
