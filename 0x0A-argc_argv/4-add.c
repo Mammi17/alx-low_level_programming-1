@@ -10,13 +10,13 @@
 
 int main(int argc, char *argv[])
 {
-	int i, add = 0;
+	int i, add = 0, n;
 
 	if(argc == 1)
 	{
 		printf("0\n");
 	}
-	for (i=1; i < argv; i++)
+	for (i=1; i < argc; i++)
 	{
 		if (argv[i] <'0' || argv[i] >'9')
 		{
