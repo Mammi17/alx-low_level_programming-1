@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, add = 0, n;
+	int i, add = 0, n, k;
 
 	if(argc == 1)
 	{
@@ -18,7 +18,8 @@ int main(int argc, char *argv[])
 	}
 	for (i=1; i < argc; i++)
 	{
-		if (argv[i] <'0' || argv[i] >'9')
+		for (k=1;  argv[i][k] != '\0'; k++)
+		if (argv[i][k] <'0' || argv[i][k] >'9')
 		{
 			printf("Error\n");
 			return (1);
