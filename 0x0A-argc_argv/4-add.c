@@ -11,9 +11,6 @@ int main(int argc, char **argv)
 {
 	int i, add = 0, n, k;
 
-	if (argc == 1)
-		printf("0\n");
-
 	for (i = 1; i < argc; i++)
 	{
 		for (k = 0;  argv[i][k] != '\0'; k++)
@@ -25,7 +22,7 @@ int main(int argc, char **argv)
 			}
 		}
 	}
-	for (i = 2; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		n = atoi(argv[i]);
 		add += n;
