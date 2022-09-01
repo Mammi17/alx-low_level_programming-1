@@ -21,11 +21,12 @@ int main(int argc, char **argv)
 	if (n < 0)
 	{
 		printf("0\n");
+		return (0);
 	}
 
 	for (i = 0; i <= 4; i++)
 	{
-		while(n >= 0 && n >= money[i])
+		while (n >= 0 && n >= money[i])
 		{
 			n -= money[i];
 			ch++;
