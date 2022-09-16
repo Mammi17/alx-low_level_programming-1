@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 #include <string.h>
 /*
  * str_concat - function that concatenates two string
@@ -6,7 +6,7 @@
  * @s2: a pionter
  */
 
-char *str_concat(char *s1, char s2)
+char *str_concat (char *s1, char s2)
 {
 	int i, j, t;
 	char *point;

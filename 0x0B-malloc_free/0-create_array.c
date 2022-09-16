@@ -10,7 +10,8 @@
 char *create_array (unsigned int size, char c)
 {
 	int j;
-	*char point;
+	char *point;
+
 	point = (char *)malloc(size * sizeof(char));
 	if (point == NULL)
 		return (NULL);
