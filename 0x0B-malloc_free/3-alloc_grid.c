@@ -1,5 +1,7 @@
 #include "main.h"
 #include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /*
  * alloc_grid - that returns
@@ -9,16 +11,16 @@
 
 int **alloc_grid (int width, int height)
 {
-	int i, l, **point;
+	int i, j, **point;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	point = (int **)malloc(height * sizeof(int));
+	point = (int **) malloc(height * sizeof(int));
 	if (point == NULL)
 		return (NULL);
 	for (j = 0; j < height; j++)
 	{
-		point = (int **)malloc(width * sizeof(int));
+		point = (int **) malloc(width * sizeof(int));
 		if (point[j] == NULL)
 		{
 			free(point);
