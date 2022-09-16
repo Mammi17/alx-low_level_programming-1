@@ -7,7 +7,7 @@
  * return: NULL
  */
 
-char *strdup (char *str)
+char *_strdup (char *str)
 {
 	char *point;
 
