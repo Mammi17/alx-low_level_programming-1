@@ -17,9 +17,9 @@ char *create_array (unsigned int size, char c)
 	point = (char *) malloc(size * sizeof(char));
 	if (point == NULL)
 		return (NULL);
-	for (i = 0; i < size; i++)
+	for (j= 0; j < size; j++)
 	{
-		point[i] = c;
+		point[j] = c;
 	}
 	return (0);
 	if (size == 0)
