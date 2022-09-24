@@ -9,7 +9,7 @@
  * return: NULL
  */
 
-char *_strdup (char *str)
+char *_strdup(char *str)
 {
 	char *point;
 	int j = 0;
@@ -23,5 +23,5 @@ char *_strdup (char *str)
 		return (NULL);
 	else
 	strcpy(point, str);
-	return (point)
+	return (point);
 }
