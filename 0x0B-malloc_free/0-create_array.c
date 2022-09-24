@@ -21,7 +21,7 @@ char *create_array (unsigned int size, char c)
 	{
 		point[j] = c;
 	}
-	return (0);
+	return (point);
 	if (size == 0)
 		return (NULL);
 }

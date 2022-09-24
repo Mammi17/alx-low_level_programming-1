@@ -7,6 +7,7 @@
  * alloc_grid - that returns
  * @width: an integer
  * @height: an integer
+ * return: a pointer of function
  */
 
 int **alloc_grid (int width, int height)
@@ -15,12 +16,13 @@ int **alloc_grid (int width, int height)
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	point = (int **) malloc(height * sizeof(int));
+
+	point = (int **) malloc(height * sizeof(int *));
 	if (point == NULL)
 		return (NULL);
 	for (j = 0; j < height; j++)
 	{
-		point = (int **) malloc(width * sizeof(int));
+		point[j] = (int *) malloc(width * sizeof(int));
 		if (point[j] == NULL)
 		{
 			free(point);
