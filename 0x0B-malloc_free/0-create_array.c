@@ -22,7 +22,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	for (j = 0; j < size; j++)
 	{
-		*(point + i) = c;
+		*(point + j) = c;
 	}
 	return (point);
 }
