@@ -2,8 +2,8 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-/*
- * str_concat - a pointer of function that concatenates two string
+/**
+ * str_concat - function that concatenates two string
  * @s1: a pointer
  * @s2: a pointer
  * Return: point
@@ -22,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	while (s2[j] != '\0')
 		j++;
-	t = i + j;
+	t = i + j + 1;
 	point = (char *) malloc(t * sizeof(char));
 	if (point == NULL)
 		return (NULL);
