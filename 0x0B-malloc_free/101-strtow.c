@@ -1,11 +1,10 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib>
-
-/*
+#include <stdlib.h>
+/**
  * strtow - splits a string into words
  * @str: a pointer
- * return: a pointer
+ * return: point
  */
 
 char **strtow (char *str)

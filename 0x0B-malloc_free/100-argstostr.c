@@ -19,12 +19,12 @@ char *argstostr (int ac, char **av)
 	{
 		for (i = 0; av[j][i] != '\0'; i++)
 			a++;
-
+		a++;
 	}
 	point = (char *) malloc((a + 1) * sizeof(char));
 	if (point == NULL)
 		return (NULL);
-	for (b = j = i = 0; b < a; b++, i++)
+	for (b = j = i = 0; b < a; i++, b++)
 	{
 		if (av[j][i] == '\0')
 		{
