@@ -4,9 +4,10 @@
 #include <stdlib.h>
 
 /*
- * str_concat - function that concatenates two string
+ * str_concat - a pointer of function that concatenates two string
  * @s1: a pionter
  * @s2: a pionter
+ * return: a pointer
  */
 
 char *str_concat(char *s1, char *s2)
@@ -26,7 +27,7 @@ char *str_concat(char *s1, char *s2)
 	point = (char *) malloc(t * sizeof(char));
 	if (point == NULL)
 		return (NULL);
-	else
-		point = strcat(s1,s2);
+
+	point = strcat(s1, s2);
 	return (point);
 }
