@@ -1,13 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * create_array - function that creates spaces from heap and
  * assigning a character to it.
  * @size : an integer
  * @c : a char
- * Return : NULL
+ * Return : pointer
  */
 
 char *create_array(unsigned int size, char c)
