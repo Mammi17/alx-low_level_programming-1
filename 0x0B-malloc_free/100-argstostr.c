@@ -1,17 +1,16 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
-/*
+/**
  * argstostr - concatenates all the arguments of program
  * @ac: an integer
  * @av: a pointer
- * return: a pointer of function
+ * Return: point
  */
 
 char *argstostr (int ac, char **av)
 {
-	int a, j, i, b;
+	int a = 0, j, i, b;
 	char *point;
 
 	if (ac == 0 || av == NULL)
@@ -23,6 +22,8 @@ char *argstostr (int ac, char **av)
 
 	}
 	point = (char *) malloc((a + 1) * sizeof(char));
+	if (point == NULL)
+		return (NULL);
 	for (b = j = i = 0; b < a; b++, i++)
 	{
 		if (av[j][i] == '\0')
@@ -32,12 +33,9 @@ char *argstostr (int ac, char **av)
 			b++;
 			i = 0;
 		}
-		if (b < a + 1)
+		if (b < a - 1)
 			point[b] = av[j][i];
 	}
 	point[b] = '\0';
 	return (point);
-	if (point == NULL)
-		return (NULL);
 }
-
