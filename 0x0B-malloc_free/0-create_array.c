@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 /**
- * create_array - function that creates an array of chars
- * and initializes it with a specific char.
+ * create_array - function that creates spaces from heap and
+ * assigning a character to it.
  * @size : an integer
  * @c : a char
  * Return : NULL
