@@ -6,7 +6,7 @@
  * _strdup - function that returns a pointer to a newly
  * allocated space in memory
  * @str : a pointer
- * return: point
+ * Return: point
  */
 
 char *_strdup(char *str)

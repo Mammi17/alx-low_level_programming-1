@@ -2,12 +2,11 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-
 /*
  * str_concat - a pointer of function that concatenates two string
- * @s1: a pionter
- * @s2: a pionter
- * return: point
+ * @s1: a pointer
+ * @s2: a pointer
+ * Return: point
  */
 
 char *str_concat(char *s1, char *s2)
@@ -27,7 +26,7 @@ char *str_concat(char *s1, char *s2)
 	point = (char *) malloc(t * sizeof(char));
 	if (point == NULL)
 		return (NULL);
-
-	point = strcat(s1, s2);
+	strcpy(point, s1);
+	strcat(point, s2);
 	return (point);
 }
