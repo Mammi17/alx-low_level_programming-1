@@ -6,7 +6,7 @@
  * assigning a character to it.
  * @size : an integer
  * @c : a char
- * Return : pointer
+ * return: a pointer
  */
 
 char *create_array(unsigned int size, char c)
