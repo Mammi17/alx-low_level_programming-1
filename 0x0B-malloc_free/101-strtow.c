@@ -12,9 +12,10 @@ char **strtow (char *str)
 	char **point;
 	int i, j, a;
 
-
+	/**
 	if (str == "" || str == NULL)
 		return (NULL);
+	*/
 	a = 1;
 	for (j = 1; str[j] != '\0'; j++)
 			a++;
