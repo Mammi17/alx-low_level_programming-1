@@ -39,3 +39,4 @@ char **strtow (char *str)
 	{
 		return (NULL);
 	}
+}
