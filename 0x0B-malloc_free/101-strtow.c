@@ -13,9 +13,7 @@ char **strtow (char *str)
 	int i, j, a;
 
 
-	if (str == "")
-		return (NULL);
-	if (str == NULL)
+	if (str == "" || str == NULL)
 		return (NULL);
 	a = 1;
 	for (j = 1; str[j] != '\0'; j++)

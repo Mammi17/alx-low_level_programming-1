@@ -8,7 +8,7 @@
  * Return: point
  */
 
-char *argstostr (int ac, char **av)
+char *argstostr(int ac, char **av)
 {
 	int a = 0, j, i, b;
 	char *point;
