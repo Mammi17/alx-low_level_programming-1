@@ -52,15 +52,15 @@ char **strtow (char *str)
 	point = (char **) malloc(a  * sizeof(char*));
 	if (point == NULL)
 		return (NULL);
-	for (j = 0, i , l = 0; str[j] != '\0'; l++)
+	for (i = 0, l = 0; str[j] != '\0'; l++)
 	{
 		for (i = j; str[i] != '\0'; i++)
 		{
 			if (str[i] != ' ')
 			{
 				point[l] = (char *) malloc((i-j+2) * sizeof(char));
-				strncpy (point[l],str[j],i-j);
 			}
+			strncpy (point[l],str[j],i-j);
 		}
 		j = i + 1;
 	}
