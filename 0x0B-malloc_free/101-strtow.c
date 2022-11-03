@@ -11,12 +11,13 @@
 char **strtow (char *str)
 { 
 	char **point;
-	int i, j, l, a;
+	int i, j, a;
 
-	
+	/*
 	if (str == "")
 	       return (NULL);
 
+	 */
 	if (str == NULL)
 		return (NULL);
 	
