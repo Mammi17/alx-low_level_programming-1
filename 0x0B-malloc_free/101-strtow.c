@@ -13,15 +13,15 @@ char **strtow (char *str)
 	char **point;
 	int i, j, l, a;
 
-	/*
+	
 	if (str == "")
 	       return (NULL);
 
 	if (str == NULL)
 		return (NULL);
-	*/
+	
 	a = 1;
-	/*
+
 	for (j = 1; str[j] != '\0'; j++)
 			a++;
 
@@ -43,7 +43,7 @@ char **strtow (char *str)
 	}
 	**point = '\n';
 	return (point);
-	*/
+	/*
 	for (j = 0; str[j] != '\0'; j++)
 	{
 		if (str[j] == ' ')
@@ -65,4 +65,5 @@ char **strtow (char *str)
 		j = i + 1;
 	}
 	return (point);
+	*/
 }
