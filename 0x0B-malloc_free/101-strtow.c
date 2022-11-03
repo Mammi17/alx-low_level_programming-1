@@ -15,11 +15,11 @@ char **strtow (char *str)
 	/*
 	if (str == "")
 	       return (NULL);
-	*/
+
 	if (str == NULL)
 		return (NULL);
-	
-	a = 1;
+	*/
+	a = 0;
 	/*
 	for (j = 1; str[j] != '\0'; j++)
 			a++;
