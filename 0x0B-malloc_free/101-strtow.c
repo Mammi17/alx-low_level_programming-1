@@ -45,8 +45,9 @@ char **strtow (char *str)
 			point[i] = (char *) malloc(j * sizeof(char));
 			point[i] = &str[j];
 		}
+		j++;
 	}
-	**point = '\0';
+	**point = '\n';
 	return (point);
 	/*
 	for (j = 0; str[j] != '\0'; j++)
