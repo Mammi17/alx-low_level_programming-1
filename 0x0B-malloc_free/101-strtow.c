@@ -12,9 +12,10 @@ char **strtow (char *str)
 	char **point, other;
 	int i, j, l, a;
 
-	
+	/*
 	if (str == "")
 	       return (NULL);
+	*/
 	if (str == NULL)
 		return (NULL);
 	
