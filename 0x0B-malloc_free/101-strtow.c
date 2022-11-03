@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 /**
  * strtow - splits a string into words
  * @str: a pointer
@@ -9,7 +10,7 @@
 
 char **strtow (char *str)
 { 
-	char **point, other;
+	char **point;
 	int i, j, l, a;
 
 	/*
@@ -19,7 +20,7 @@ char **strtow (char *str)
 	if (str == NULL)
 		return (NULL);
 	*/
-	a = 0;
+	a = 1;
 	/*
 	for (j = 1; str[j] != '\0'; j++)
 			a++;
@@ -58,7 +59,7 @@ char **strtow (char *str)
 			if (str[i] != ' ')
 			{
 				point[l] = (char *) malloc((i-j+2) * sizeof(char));
-				strncpy (point,str,i-j);
+				strncpy (point[l],str[j],i-j);
 			}
 		}
 		j = i + 1;
