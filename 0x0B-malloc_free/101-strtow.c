@@ -29,11 +29,11 @@ char **strtow (char *str)
 	point = (char **) malloc(a  * sizeof(char));
 	if (point == NULL)
 		return (NULL);
-	/*
+	i = 0;
 	j = 0;
 	while (str[j])
-	*/
-	for (j = 0, i = 0; str[j] < a; j++)
+	/*
+	for (j = 0, i = 0; str[j] < a; j++)*/
 	{
 		if (str[j] == ' ')
 		{
@@ -46,7 +46,7 @@ char **strtow (char *str)
 			point[i] = &str[j];
 		}
 	}
-	**point = '\n';
+	**point = '\0';
 	return (point);
 	/*
 	for (j = 0; str[j] != '\0'; j++)
