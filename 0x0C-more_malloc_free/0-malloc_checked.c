@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * malloc_checked - that allocates memoriu using malloc
+ * malloc_checked - function that allocates memory using malloc
  * @b: a integer
  */
 
@@ -12,6 +12,6 @@ void *malloc_checked(unsigned int b)
 
 	h = malloc(b);
 	if  (h == NULL)
-		exit (98);
+		exit(98);
 	return (h);
 }
