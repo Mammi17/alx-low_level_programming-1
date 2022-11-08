@@ -7,7 +7,7 @@
  * @ptr: a pointer
  * @old_size: an integer
  * @new_size: an integer
- * return: void
+ * return: a pointer of void
  */
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
@@ -19,7 +19,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (ptr == NULL)
 	{
 		return (malloc(new_size));
-	} 
+	}
 	if (new_size == old_size)
 	{
 		return (ptr);
@@ -30,13 +30,13 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (0);
 	}
 	y = ptr;
-	point = (void *) malloc(new_size);
+	point = (void *) malloc(new_size * sizeof(char));
 	x = point;
 	if (point == NULL)
 	{
 		return (0);
 	}
-	for (i = 0; i < new_size; i++)
+	for (i = 0; i < new_size || i < old_size; i++)
 	{
 		x[i] = y[i];
 	}

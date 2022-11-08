@@ -6,7 +6,7 @@
  * array_range - that create an array of integers
  * @min: an integer
  * @max: an integer
- * return: an integer
+ * return: a pointer of int
  */
 
 int *array_range(int min, int max)
