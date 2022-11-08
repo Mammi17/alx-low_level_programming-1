@@ -17,10 +17,10 @@ int *array_range(int min, int max)
 	{
 		return (0);
 	}
-	point = (int *) malloc((max-1) * sizeof(int));
+	point = (int *) malloc((max - 1) * sizeof(int));
 	if (point == 0)
 		return (0);
-	for (i = min; i <= max; i++)
+	for (i = min; i <= max - min; i++)
 	{
 		point[i] = min++;
 	}

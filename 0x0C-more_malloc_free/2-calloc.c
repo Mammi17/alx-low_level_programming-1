@@ -6,7 +6,7 @@
  * _calloc - function thats allocates memory for array
  * @nmemb: a integer
  * @size: a integer
- * return: void
+ * return: a void
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -28,7 +28,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	i = 0;
 	while (i <= nmemb * size)
 	{
-		x[i] = '\0';
+		x[i] = 0;
 		i++;
 	}
 	return (point);

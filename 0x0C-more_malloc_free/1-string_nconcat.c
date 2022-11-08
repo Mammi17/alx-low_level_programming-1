@@ -3,11 +3,11 @@
 #include <string.h>
 #include "main.h"
 /**
- * strinng_nconcat - that concatenate two strings
+ * strinng_nconcat - function that concatenates two strings
  * @s1: a character
  * @s2: a caracter
  * @n: a integer
- * return: a pointer of function char
+ * return: a char
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		a++;
 	while (s2[b] != '\0')
 		b++;
-	point = (char *) malloc((a+n+1) * sizeof(char));
+	point = (char *) malloc((a + n + 1) * sizeof(char));
 	for (i = 0; i <= a; i++)
 	{
 		point[i] = s1[i];
