@@ -7,7 +7,7 @@
  * @ptr: a pointer
  * @old_size: an integer
  * @new_size: an integer
- * return: a pointer of void
+ * Return: a pointer of void
  */
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
@@ -34,7 +34,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	x = point;
 	if (point == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 	for (i = 0; i < new_size || i < old_size; i++)
 	{
