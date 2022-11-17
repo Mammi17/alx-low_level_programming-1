@@ -18,8 +18,8 @@ int *array_range(int min, int max)
 		return (0);
 	}
 	point = (int *) malloc((max - min + 1) * sizeof(int));
-	if (point == 0)
-		return (0);
+	if (point == NULL)
+		return (NULL);
 	for (i = 0; i <= max - min; i++)
 	{
 		point[i] = min++;
