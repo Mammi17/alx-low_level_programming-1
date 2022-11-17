@@ -27,16 +27,16 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (new_size == 0 && ptr != NULL)
 	{
 		free(ptr);
-		return (0);
+		return (NULL);
 	}
 	y = ptr;
-	point = (void *) malloc(new_size * sizeof(char));
+	point = (void *) malloc(new_size);
 	x = point;
 	if (point == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < new_size || i < old_size; i++)
+	for (i = 0; i < new_size && i < old_size; i++)
 	{
 		x[i] = y[i];
 	}
