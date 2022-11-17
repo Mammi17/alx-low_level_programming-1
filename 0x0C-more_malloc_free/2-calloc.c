@@ -24,9 +24,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	x = point;
 	i = 0;
-	while (i <= nmemb * size)
+	while (i < nmemb * size)
 	{
-		x[i] = 0;
+		x[i] = '\0';
 		i++;
 	}
 	return (point);
