@@ -6,7 +6,7 @@
  * array_range - that create an array of integers
  * @min: an integer
  * @max: an integer
- * return: a pointer of int
+ * Return: a pointer of int
  */
 
 int *array_range(int min, int max)
@@ -17,10 +17,10 @@ int *array_range(int min, int max)
 	{
 		return (0);
 	}
-	point = (int *) malloc((max - 1) * sizeof(int));
+	point = (int *) malloc((max - min + 1) * sizeof(int));
 	if (point == 0)
 		return (0);
-	for (i = min; i <= max - min; i++)
+	for (i = 0; i <= max - min; i++)
 	{
 		point[i] = min++;
 	}
