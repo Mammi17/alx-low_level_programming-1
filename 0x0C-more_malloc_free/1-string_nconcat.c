@@ -31,11 +31,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		b++;
 	if (n > b)
 		n = b;
-	point = (char *) malloc((a + n + 2) * sizeof(char));
+	point = (char *) malloc((a + n + 1) * sizeof(char));
 	for (i = 0; i <= a; i++)
 	{
 		point[i] = s1[i];
 	}
 	strncat(point, s2, n);
+	point[i] = '\0';
 	return (point);
 }
