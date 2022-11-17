@@ -32,16 +32,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n > b)
 		n = b;
 	point = (char *) malloc((a + n + 1) * sizeof(char));
+	if (point == NULL)
+		return (NULL);
 	for (i = 0; i <= a; i++)
 	{
 		point[i] = s1[i];
 	}
-	for (i = a; i < a + n; i++)
-	{
-		point[i] = s2[i-a];
-	}
-	/*
-	strncat(point, s2, n);*/
-	point[i] = '\0';
+	strncat(point, s2, n);
 	return (point);
 }
