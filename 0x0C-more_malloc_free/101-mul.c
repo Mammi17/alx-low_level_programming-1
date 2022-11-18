@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 
 	if (argc != 3)
 	{
-		printf("Error\n");
+		printf("error\n");
 		exit(98);
 	}
 	for (j = 0; j < argc; j++)
@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 		{
 			if (argv[j][l] >= 56 || argv[j][l] <= 47)
 			{
-				printf("Error\n");
+				printf("error\n");
 				exit(98);
 			}
 		}
