@@ -12,7 +12,6 @@ int main(int argc, char **argv)
 {
 	int j, l;
 	unsigned long int mul;
-	char **num1, **num2;
 
 	if (argc != 3)
 	{
@@ -30,9 +29,10 @@ int main(int argc, char **argv)
 			}
 		}
 	}
+	/*
 		num1 = argv[1];
-		num2 = argv[2];
-		mul = atoi(num1) * atoi(num2);
+		num2 = argv[2];*/
+		mul = atoi(arg[1]) * atoi(arg[2]);
 			printf("%lu\n", mul);
 		return (0);
 }
