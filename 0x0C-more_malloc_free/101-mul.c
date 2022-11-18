@@ -6,17 +6,17 @@
  * main - that multiplie two positives numbers
  * @argv: a pointer
  * @argc: an integer
- * return: the value int
+ * Return: the value int
  */
 int main(int argc, char **argv)
 {
 	int j, l;
 	unsigned long int mul;
-	char *num1, *num2;
+	char **num1, **num2;
 
 	if (argc != 3)
 	{
-		printf("error\n");
+		printf("Error\n");
 		exit(98);
 	}
 	for (j = 0; j < argc; j++)
@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 		{
 			if (argv[j][l] >= 56 || argv[j][l] <= 47)
 			{
-				printf("error\n");
+				printf("Error\n");
 				exit(98);
 			}
 		}
