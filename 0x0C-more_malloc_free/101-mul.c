@@ -12,11 +12,11 @@ int main(int argc, char **argv)
 {
 	int j, l;
 	unsigned long int mul;
-	char *num1, *num2
+	char *num1, *num2;
 
 	if (argc != 3)
 	{
-		printf("error\n");
+		printf("Error\n");
 		exit(98);
 	}
 	for (j = 0; j < argc; j++)
@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 		{
 			if (argv[j][l] >= 56 || argv[j][l] <= 47)
 			{
-				printf("error\n");
+				printf("Error\n");
 				exit(98);
 			}
 		}
@@ -34,5 +34,5 @@ int main(int argc, char **argv)
 	num2 = argv[2];
 	mul = atoi(num1) * atoi(num2);
 	printf("%lu\n", mul);
-	return (0);
+	return (mul);
 }
