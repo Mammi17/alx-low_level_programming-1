@@ -19,11 +19,11 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(98);
 	}
-	for (j = 0; j < argc; j++)
+	for (j = 1; j < argc; j++)
 	{
 		for (l = 0; argv[j][l] != '\0'; l++)
 		{
-			if (argv[j][l] >= 56 || argv[j][l] <= 47)
+			if (argv[j][l] > 57 || argv[j][l] < 48)
 			{
 				printf("Error\n");
 				exit(98);
@@ -34,5 +34,5 @@ int main(int argc, char **argv)
 	num2 = argv[2];
 	mul = atoi(num1) * atoi(num2);
 	printf("%lu\n", mul);
-	return (mul);
+	return (0);
 }
