@@ -14,13 +14,13 @@ int main(int argc, char **argv)
 	if (argc != 2)
 	{
 		printf("Error\n");
-			exit(1);
+		exit(1);
 	}
-	octet = atoi(argv[2]);
+	octet = atoi(argv[1]);
 	opt = (char *)main;
 	for (j = 0; j < octet; j++)
 	{
-		if (j == octet - 1)
+		if (j != octet - 1)
 			printf(" ");
 		printf("%02hhx", opt[j]);
 	}

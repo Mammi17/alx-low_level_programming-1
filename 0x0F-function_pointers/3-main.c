@@ -27,7 +27,6 @@ int main(int argc, char **argv)
 	num2 = atoi(argv[3]);
 	printf("%d\n",operator(num1, num2));
 	return (0);
-	c = *argv[2];
 	if (argv[2][1])
 	{
 		printf("Error\n");
