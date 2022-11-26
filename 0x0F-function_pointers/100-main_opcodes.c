@@ -21,8 +21,8 @@ int main(int argc, char **argv)
 	for (j = 0; j < octet; j++)
 	{
 		if (j == octet - 1)
-			printf("");
-		printf("%2hx",opt[i]);
+			printf(" ");
+		printf("%2hx",opt[j]);
 	}
 	if (octet < 0)
 	{
