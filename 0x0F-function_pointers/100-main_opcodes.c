@@ -1,4 +1,3 @@
-#include "calc.h"
 #include <stdio.h>
 #include <stlib.h>
 #include <udis86.h>
