@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 	{
 		if (j == octet - 1)
 			printf(" ");
-		printf("%2hx",opt[j]);
+		printf("%02hhx", opt[j]);
 	}
 	if (octet < 0)
 	{
