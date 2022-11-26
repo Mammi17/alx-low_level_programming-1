@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 {
 	int num1, num2;
 	int (*operator)(int, int);
-
+	char c;
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -27,12 +27,13 @@ int main(int argc, char **argv)
 	num2 = atoi(argv[3]);
 	printf("%d\n",operator(num1, num2));
 	return (0);
-	if (*argv[2] == '/' && num2 = 0)
+	c = *argv[2];
+	if (c == '/' && num2 = 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
-	if ( *argv[2] == '%' && num2 = 0)
+	if (c == '%' && num2 = 0)
 	{
 		printf("Error\n");
 		exit(100);
