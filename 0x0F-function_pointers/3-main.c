@@ -29,8 +29,11 @@ int main(int argc, char **argv)
 	return (0);
 	if (argv[2][1])
 	{
-		printf("Error\n");
-		exit(100);
+		if (num2 = 0)
+		{
+			printf("Error\n");
+			exit(100);
+		}
 	}
 	/*
 	if (c == '%' && num2 = 0)
