@@ -1,6 +1,6 @@
 #include "3-calc.h"
 #include <stdio.h>
-#include <stlib.h>
+#include <stdlib.h>
 /**
  * main - that perform simple operation
  * @argc: an integer
