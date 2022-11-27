@@ -20,9 +20,9 @@ int main(int argc, char **argv)
 	opt = (char *)main;
 	for (j = 0; j < octet; j++)
 	{
-		if (j != octet - 2)
+		if (j != octet - 1)
 		{
-			printf("%02x", opt[j]);
+			printf(" ");
 		}
 		printf("%02x", opt[j]);
 	}
