@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 		}
 		else
 			printf("\n");
-		printf("%02x", opt[j]);
+		printf("%02hhx", opt[j]);
 	}
 	return (0);
 }
