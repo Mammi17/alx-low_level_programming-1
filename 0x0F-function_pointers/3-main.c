@@ -11,6 +11,7 @@ int main(int argc, char **argv)
 {
 	int num1, num2;
 	int (*operator)(int, int);
+	char c;
 
 	if (argc != 4)
 	{
@@ -37,7 +38,8 @@ int main(int argc, char **argv)
 		}
 	}
 	*/
-	if ((*argv[2] == '%' || *argv[2] == '/') && num2 = 0)
+	c = *argv[2];
+	if ((c == '%' || c == '/') && num2 == 0)
 	{
 		printf("Error\n");
 		exit(100);

@@ -20,12 +20,11 @@ int main(int argc, char **argv)
 	opt = (char *)main;
 	for (j = 0; j < octet; j++)
 	{
-		if (j == octet - 1)
+		if (j != octet - 1)
 		{
 			printf("%02hhx\n", opt[j]);
-			break;
 		}
-		printf("%02hhx", opt[j]);
+		printf("%02hhx", opt[j] & OxFF);
 	}
 	if (octet < 0)
 	{
