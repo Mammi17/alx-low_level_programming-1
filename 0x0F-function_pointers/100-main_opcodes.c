@@ -18,6 +18,11 @@ int main(int argc, char **argv)
 	}
 	octet = atoi(argv[1]);
 	opt = (char *)main;
+	if (octet < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
 	for (j = 0; j < octet; j++)
 	{
 		if (j < octet - 1)
@@ -27,11 +32,6 @@ int main(int argc, char **argv)
 		else
 			printf("\n");
 		printf("%02x", opt[j]);
-	}
-	if (octet < 0)
-	{
-		printf("Error\n");
-		exit(2);
 	}
 	return (0);
 }
