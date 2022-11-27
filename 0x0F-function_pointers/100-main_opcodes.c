@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 	opt = (char *)main;
 	for (j = 0; j < octet; j++)
 	{
-		if (j != octet)
+		if (j != octet - 2)
 		{
 			printf("%02x", opt[j]);
 		}
