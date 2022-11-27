@@ -29,12 +29,7 @@ int main(int argc, char **argv)
 	printf("%d\n", operator(num1, num2));
 	return (0);
 	c = *argv[2];
-	if (c == '%' && num2 == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
-	if (c == '/' && num2 == 0)
+	if ((c == '/' || c == '%') && num2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
