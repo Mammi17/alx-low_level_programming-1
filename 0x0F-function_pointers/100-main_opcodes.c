@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 		{
 			printf(" ");
 		}
-		printf("%02x\n", opt[j]);
+		printf("%02hhx\n", opt[j]);
 	}
 	if (octet < 0)
 	{
