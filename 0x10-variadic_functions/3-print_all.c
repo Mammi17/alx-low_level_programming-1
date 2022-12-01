@@ -24,8 +24,8 @@ void print_all(const char * const format, ...)
 		{
 			if (format[j] == arg[i])
 			{
-				s = ", ";
 				printf("%s", s);
+				s = ", ";
 			} i++;
 		}
 		switch (format[j])
