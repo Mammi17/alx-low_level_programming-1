@@ -9,7 +9,7 @@
  * Return: an integer
  */
 
-int print_numbers(const char * const format, ...)
+int print_all(const char * const format, ...)
 {
 	va_list note;
 	unsigned int j, i;
