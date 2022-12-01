@@ -12,23 +12,21 @@
 void print_all(const char * const format, ...)
 {
 	va_list note;
-	unsigned int j, i;
+	unsigned int j = 0, i;
 	const char *arg = "cifs";
 	char *s = "", *string;
 
 	va_start(note, format);
-	j = 0;
-	while (format[j])
+	while (format && format[j])
 	{
 		i = 0;
 		while (arg[i])
 		{
 			if (format[j] == arg[i])
 			{
-				s = ",";
+				s = ", ";
 				printf("%s", s);
-			}
-			i++;
+			} i++;
 		}
 		switch (format[j])
 		{
@@ -50,9 +48,7 @@ void print_all(const char * const format, ...)
 					}
 				printf("%s", string);
 				break;
-		}
-		i++;
-	}
-	printf("\n");
+		} j++;
+	} printf("\n");
 	va_end(note);
 }
