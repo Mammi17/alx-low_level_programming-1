@@ -9,12 +9,12 @@
  * Return: an integer
  */
 
-int print_all(const char * const format, ...)
+void print_all(const char * const format, ...)
 {
 	va_list note;
 	unsigned int j, i;
 	const char *arg = "cifs";
-	char c, *s = "", *string;
+	char *s = "", *string;
 
 	va_start(note, format);
 	j = 0;
@@ -23,7 +23,7 @@ int print_all(const char * const format, ...)
 		i = 0;
 		while (arg[i])
 		{
-			if (format[j] = arg[i])
+			if (format[j] == arg[i])
 			{
 				s = ",";
 				printf("%s", s);
@@ -33,7 +33,7 @@ int print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				printf("%c", va_arg(note, char));
+				printf("%c", va_arg(note, int));
 				break;
 			case 'i':
 				printf("%d", va_arg(note, int));
@@ -42,13 +42,13 @@ int print_all(const char * const format, ...)
 				printf("%f", va_arg(note, double));
 				break;
 			case 's':
-				string = va_arg(note, char *)
+				string = va_arg(note, char *);
 					if (string == NULL)
 					{
 						printf("(nil)");
 						break;
 					}
-				printf("%s", str);
+				printf("%s", string);
 				break;
 		}
 		i++;
