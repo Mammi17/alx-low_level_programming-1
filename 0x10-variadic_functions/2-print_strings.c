@@ -21,8 +21,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	while (j < n)
 	{
 		string = va_arg(note, char *);
-		printf("%s", string);
-		if (string == NULL)
+		if (string != NULL)
+			printf("%s", string);
+		else
 			printf("(nil)");
 		if (j != (n - 1) && separator != NULL)
 			printf("%s", separator);
