@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * get_endianness - that checks the endianness
- * 
+ *
  * Return: an integer
  */
 

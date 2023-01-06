@@ -11,6 +11,7 @@ void print_binary(unsigned long int n)
 {
 	unsigned long int b;
 	char c;
+
 	if (n > 1)
 	{
 		b = n >> 1;
