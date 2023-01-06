@@ -1,13 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * get_bit - that returns the value of a bit at a given index
+ * clear_bit - that set the value of a bit to 0 at a given index
  * @n: an unsigned long integer
  * @index: an an unsigned int
  * Return: an integer
  */
 
-int get_bit(unsigned long int *n, unsigned int index)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
 	if (index >= (sizeof(unsigned long int) * 8))
 	{

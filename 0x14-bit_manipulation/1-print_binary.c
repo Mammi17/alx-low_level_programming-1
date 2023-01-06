@@ -4,16 +4,18 @@
 /**
  * print_binary - tha prints the binary representation number
  * @n: an unsigned integer
- * Return: an integer
+ * Return: void
  */
 
-int print_binary(unsigned long int n)
+void print_binary(unsigned long int n)
 {
 	unsigned long int b;
+	char c;
 	if (n > 1)
 	{
 		b = n >> 1;
 		print_binary(b);
 	}
-	write(1, &((n & 1) + '0'), 1);
+	c = (n & 1) + '0';
+	write(1, &c, 1);
 }

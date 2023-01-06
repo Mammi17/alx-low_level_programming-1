@@ -1,13 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * flip_bit - that returns the number of bityou would need to flip
+ * flip_bits - that returns the number of bityou would need to flip
  * @n: an unsigned long integer
  * @m: an unsigned  long int
  * Return: an integer
  */
 
-unsigned int flip_bit(unsigned long int n, unsigned long int m)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int numb, count;
 
