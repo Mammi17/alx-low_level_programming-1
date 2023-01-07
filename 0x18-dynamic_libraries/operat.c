@@ -1,22 +1,22 @@
 #include <stdio.h>
 
-int addi(int a, int b)
+int add(int a, int b)
 {
 	return (a + b);
 }
-int divi(int a, int b)
+int div(int a, int b)
 {
 	return (a / b);
 }
-int subs(int a, int b)
+int sub(int a, int b)
 {
 	return (a - b);
 }
-int modu(int a, int b)
+int mod(int a, int b)
 {
 	return (a % b);
 }
-int mult(int a, int b)
+int mul(int a, int b)
 {
 	return (a * b);
 }
