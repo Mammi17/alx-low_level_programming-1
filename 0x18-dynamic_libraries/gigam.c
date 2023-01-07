@@ -4,7 +4,7 @@
 #include <unistd.h>
 /**
  * main - enter the code
- *
+ * @format: a constant character
  * Return: an integer
  */
 
