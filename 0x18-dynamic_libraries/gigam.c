@@ -10,6 +10,7 @@
 
 int main(void)
 {
-	printf("%d\n", _strlen("Congratulation! you win"));
-	return (EXIT_SUCCESS);
+	printf("9 8 10 24 75 -9\n");
+	write(1, "Congratulation, you win the Jackpot!\n", 38)
+	exit (EXIT_SUCCESS);
 }
