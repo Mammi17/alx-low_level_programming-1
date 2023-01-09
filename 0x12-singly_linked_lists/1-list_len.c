@@ -18,5 +18,5 @@ size_t list_len(const list_t *h)
 		current = current->next;
 		a++;
 	}
-        return (a);
+	return (a);
 }
