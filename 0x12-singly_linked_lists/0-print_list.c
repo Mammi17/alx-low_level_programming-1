@@ -10,7 +10,7 @@
 size_t print_list(const list_t *h)
 {
 	size_t a;
-	list_t *current;
+	const list_t *current;
 
        a = 0;
        current = h;
@@ -21,7 +21,7 @@ size_t print_list(const list_t *h)
 	       else
 		       prinf("[%u] %s\n", current->len, current->str);
 	       a++;
-	       current->next;
+	       current = current->next;
        }
        return (a);
 }
