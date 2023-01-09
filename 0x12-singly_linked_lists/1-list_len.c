@@ -9,14 +9,14 @@
 size_t print_list(const list_t *h)
 {
 	size_t a;
-	list_t *current;
+	const list_t *current;
 
        a = 0;
        current = h;
        while (current != NULL)
        {
 	       a++;
-	       current->next;
+	       current = current->next;
        }
        return (a);
 }
