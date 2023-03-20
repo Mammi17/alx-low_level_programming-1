@@ -1,1 +1,0 @@
-others task for malloc
